@@ -1,0 +1,27 @@
+iframe{
+  height:calc(100vh - 4px);
+  width: calc( 100vw - 36px);
+  border: none;
+  background-color: white;
+}
+body{
+  width: 100vw;
+  border-radius: 5px;
+  height: 100vh;
+  overflow: hidden;
+  margin: 2px;
+  padding: 0;
+  background-color: rgb(255, 0, 0);
+}
+.connect{
+  width: calc(100vw - 40px);
+  height: calc(100vh - 4px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: gray;
+  align-items: center;
+}
+.connect p{
+  color: red;
+}
