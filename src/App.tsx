@@ -34,6 +34,7 @@ function App() {
   console.log(net())
   return (
     <div class="container">
+      {/* //Header is Tab to run close resize minsize button  */}
       <Headers />
       {net()? 
         <div>{Loading()? <div class="connect"><h1>Loading.......</h1></div>
