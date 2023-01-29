@@ -25,3 +25,7 @@ body{
 .connect p{
   color: red;
 }
+.container {
+  margin: 0;
+  display: flex;
+}

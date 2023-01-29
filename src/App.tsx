@@ -1,10 +1,16 @@
 import { createSignal , createEffect} from "solid-js";
 import "./App.css";
-import Headers from "./components/Headers/Headers";
+import Headers from "./components/Headers/Headers"; //import header
+import HomePage from "./components/HomePage/HomePage";
 
 function App() {
+  //check internet connction state
   const [net,setNet]= createSignal<boolean>(false)
+
+  //loading before start
   const [Loading ,setLoading] = createSignal<boolean>(true)
+
+  //out of loading
   createEffect(()=>{
    console.log("netna is : "+ netna)
    setTimeout(() => {
@@ -29,9 +35,13 @@ function App() {
   return (
     <div class="container">
       <Headers />
-      {net()? <div>{Loading()? <div class="connect"><h1>Loading.......</h1></div>:<iframe src="https://dose-products.netlify.app/"></iframe>}</div>
-      :
-      <div class="connect">
+      {net()? 
+        <div>{Loading()? <div class="connect"><h1>Loading.......</h1></div>
+          :
+        // you can change this in home page 
+        <HomePage/>}</div>
+        :
+        <div class="connect">
         <h1>please Connect internet</h1>
         <button onClick={Reload}>Try again</button>
         <p id="statuS"></p>
