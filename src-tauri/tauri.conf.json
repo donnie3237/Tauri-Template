@@ -7,8 +7,8 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "DosE-Products",
-    "version": "0.0.0"
+    "productName": "DosE-Tauri",
+    "version": "1.0.0"
   },
   "tauri": {
     "allowlist": {
@@ -60,7 +60,7 @@
         "height": 600,
         "resizable": true,
         "width": 800,
-        "title": "DosE-Products",
+        "title": "DosE-Tauri",
         "minWidth": 400,
         "minHeight": 400,
         "decorations": false
