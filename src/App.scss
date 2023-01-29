@@ -10,14 +10,11 @@ body{
 .connect{
   width: calc(100vw - 40px);
   height: calc(100vh - 4px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-color: gray;
   align-items: center;
-}
-.connect p{
-  color: red;
+  p{
+    color: red;
+  }
 }
 .container {
   margin: 0;

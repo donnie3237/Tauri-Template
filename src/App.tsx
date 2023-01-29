@@ -1,5 +1,5 @@
 import { createSignal , createEffect} from "solid-js";
-import "./App.css";
+import "./App.scss";
 import Headers from "./components/Headers/Headers"; //import header
 import HomePage from "./components/HomePage/HomePage";
 
@@ -37,12 +37,12 @@ function App() {
       {/* //Header is Tab to run close resize minsize button  */}
       <Headers />
       {net()? 
-        <div>{Loading()? <div class="connect"><h1>Loading.......</h1></div>
+        <div>{Loading()? <div class="connect flex"><h1>Loading.......</h1></div>
           :
         // you can change this in home page 
         <HomePage/>}</div>
         :
-        <div class="connect">
+        <div class="connect flex">
         <h1>please Connect internet</h1>
         <button onClick={Reload}>Try again</button>
         <p id="statuS"></p>
