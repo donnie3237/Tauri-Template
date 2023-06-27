@@ -3,6 +3,7 @@ import './HomePage.scss'
 import Solid_logo from './image/logo.svg'
 import Tauri_logo from './image/tauri-1.svg'
 import Sora_logo from './image/sora.jfif'
+
 const HomePage: Component = () => {
     return (
         <div class='HomePage flex'>
