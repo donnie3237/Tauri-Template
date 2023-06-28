@@ -6,7 +6,6 @@ import One from '../pages/one/One';
 import Two from '../pages/two/Two';
 
 const MainRoute: Component<{}> = (props) => {
-  
   return <Router>
     <Headers/>
     <Routes>
