@@ -9,5 +9,3 @@ const App: Component<{}> = (props) => {
 };
 
 export default App;
-
-
