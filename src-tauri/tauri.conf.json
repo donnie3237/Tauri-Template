@@ -62,8 +62,7 @@
         "width": 800,
         "title": "DosE-Tauri",
         "minWidth": 400,
-        "minHeight": 400,
-        "decorations": false
+        "minHeight": 400
       }
     ]
   }

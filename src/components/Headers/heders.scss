@@ -1,12 +1,23 @@
-.bar{
-    width: 30px;
-    height: calc(100vh - 4px);
-    background-color: black;
-    border-right: 1px solid red;
-    div{
-        width: 100%;
-        height: 30px;
-        cursor: pointer;
-        background-color: white;
+.header{
+    height: 50px;
+    width: 100vw;
+    background-color: rgb(17, 16, 16);
+    color: white;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    a{
+        height: 100%;
+        width: calc(100% / 3);
+        &.active{
+            background-color: rgb(42, 42, 42);
+        }
+    }
+    .home{
+        &.active{
+            background-color: transparent;
+        }
     }
 }
